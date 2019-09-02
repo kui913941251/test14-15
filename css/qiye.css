@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fafafa;
+}
+.banner img {
+  display: block;
+  width: 100vw;
+}
+.title {
+  width: 1200px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+.title span {
+  color: #29b078;
+}
+@media only screen and (max-width: 1200px) {
+  .title {
+    width: 100%;
+  }
+  .title p {
+    padding: 0 10px;
+  }
+}
+.content {
+  margin-bottom: 200px;
+}
+.content .width {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.content .width .left {
+  flex: 1;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+.content .width .left .top {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 0;
+  text-align: center;
+  border-bottom: #e6e6e6 1px solid;
+}
+.content .width .left .down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .width .left .down .line {
+  width: 95px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #26A26F;
+}
+.content .width .left .down .line:hover .circle {
+  background-color: #f9a372;
+}
+.content .width .left .down .line:hover p {
+  color: #ff650e;
+}
+.content .width .left .down .line .circle {
+  width: 10px;
+  height: 10px;
+  border: 1px #ff640c solid;
+  border-radius: 50%;
+}
+.content .width .right {
+  background-color: #fff;
+  flex: 3;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #999999;
+  padding: 0 0 100px 0;
+}
+.content .width .right .top {
+  padding: 25px 60px;
+  border-bottom: #e6e6e6 1px solid;
+}
+.content .width .right .top img {
+  float: left;
+  padding: 10px;
+}
+.content .width .right .down {
+  padding: 0 60px;
+}
+.content .width .right .down div {
+  text-indent: 28px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    padding: 0 10px;
+  }
+  .content .width {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content .width {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .width .left .all {
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content .width .right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .content .width .right .top {
+    padding: 15px 15px;
+  }
+  .content .width .right .down {
+    padding: 0 15px;
+  }
+}
+/*# sourceMappingURL=qiye.css.map */

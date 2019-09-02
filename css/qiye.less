@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fafafa;
+}
+
+.banner{
+    img{
+        display: block;
+        width:100vw;
+    } 
+}
+
+.title{
+    width:1200px;
+    margin:20px auto;
+    font-size: 16px;
+    span{
+    color:#29b078;
+    }
+}
+@media only screen and (max-width:1200px){
+    .title{
+        width:100%;
+        p{
+            padding:0 10px;
+        }
+    }
+}
+
+
+.content{
+    margin-bottom:200px;
+    .width{
+        width:1200px;
+        margin:0 auto;
+        display: flex;
+        .left{
+            flex:1;
+            background-color: #fff;
+            padding-bottom: 50px;
+            .top{
+                font-size: 16px;
+                font-weight:bold;
+                padding:18px 0;
+                text-align: center;
+                border-bottom: #e6e6e6 1px solid;
+            }
+            .down{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .line{
+                    width:95px;
+                    margin-top:40px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color:#26A26F;
+                    &:hover .circle{
+                        background-color: #f9a372;
+                    }
+                    &:hover p{
+                        color:#ff650e;
+                    }
+                    .circle{
+                        width:10px;
+                        height:10px;
+                        border: 1px #ff640c solid;
+                        border-radius:50%;
+                    }
+                }
+            }
+        }
+        .right{
+            background-color: #fff;
+            flex:3;
+            margin-left: 20px;
+            font-size: 14px;
+            color: #999999;
+            padding:0 0 100px 0;
+            .top{
+                padding:25px 60px;
+                border-bottom: #e6e6e6 1px solid;
+                img{
+                    float: left;
+                    padding:10px;
+                }            
+            }
+            .down{
+                padding:0 60px;
+                div{
+                    text-indent: 28px;
+                    margin-top:40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .content{
+        padding:0 10px;
+        .width{
+            width:100%;
+        }
+        
+    }
+}
+@media only screen and (max-width:700px){
+    .content{
+        .width{
+            display: flex;
+            flex-direction:column;
+            .left{
+                .all{
+                    padding:0 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            .right{
+                margin-left:0;
+                margin-top:20px;
+                .top{
+                    padding:15px 15px;
+                }
+                .down{
+                    padding:0 15px;
+                }
+            }
+        }
+        
+    }
+}

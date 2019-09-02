@@ -1,0 +1,132 @@
+.header {
+  position: relative;
+}
+.header .width {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .phone {
+  background-color: #fff;
+}
+.header .phone .width {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .phone .width p {
+  font-size: 14px;
+  color: #29b078;
+}
+.header .phone .width .icon {
+  display: flex;
+  align-items: center;
+}
+.header .phone .width .icon img {
+  margin-left: 10px;
+}
+.header .list {
+  background-color: #29b078;
+}
+.header .list .width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .list .width .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.header .list .width .left .p1 {
+  font-size: 35px;
+}
+.header .list .width .left .p2 {
+  font-size: 8px;
+  text-align: justify;
+}
+.header .list .width .right {
+  display: flex;
+  height: 100px;
+}
+.header .list .width .right a {
+  line-height: 96px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.header .list .width .right a:hover {
+  border-bottom: 4px solid #fff;
+}
+.header input {
+  width: 41px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  -webkit-appearance: none;
+  background-image: url(../img/jietu.png);
+  background-size: 41px 30px;
+  display: none;
+}
+.header input:checked + .hidden {
+  max-height: 200px;
+  -webkit-transition: all .5s;
+}
+.header .hidden {
+  overflow: hidden;
+  max-height: 0px;
+  background-color: #29B078;
+  -webkit-transition: .5s;
+}
+.header .hidden div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .hidden div a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  margin: 5px 0;
+}
+.header .hidden div a:hover {
+  background-color: rgba(250, 250, 250, 0.5);
+}
+@media only screen and (max-width: 1210px) {
+  .header .width {
+    width: 100%;
+  }
+  .header .phone {
+    padding: 0 10px;
+  }
+  .header .list {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header .list .width .right {
+    height: 50px;
+  }
+  .header .list .width .left .p1 {
+    font-size: 17.5px;
+  }
+  .header .list .width .left .p2 {
+    font-size: 4px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header .list {
+    padding: 5px 10px;
+  }
+  .header .list .width .right {
+    display: none;
+  }
+  .header input {
+    display: block;
+  }
+}
+/*# sourceMappingURL=header.css.map */

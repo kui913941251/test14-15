@@ -1,0 +1,21 @@
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -0%;
+  }
+  40% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  80% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+/*# sourceMappingURL=new_file.css.map */

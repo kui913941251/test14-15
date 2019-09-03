@@ -5,6 +5,9 @@
 body {
   background-color: #fafafa;
 }
+html {
+  font-size: 16px;
+}
 .round {
   position: relative;
   overflow: hidden;

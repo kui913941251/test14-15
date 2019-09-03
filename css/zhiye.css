@@ -25,11 +25,17 @@ body {
 }
 .content .width .direction span {
   color: #999;
+  white-space: nowrap;
 }
-.content .width .direction p {
+.content .width .direction > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .width .direction > div p {
   margin: 0 15px;
+  white-space: nowrap;
 }
-.content .width .direction p:hover {
+.content .width .direction > div p:hover {
   background-color: #26A26F;
   color: #fff;
   cursor: pointer;
@@ -151,6 +157,25 @@ body {
   padding: 10px;
   font-size: 12px;
   color: #999;
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    padding: 0 10px;
+  }
+  .content .width {
+    width: 100%;
+  }
+  .content .width .line .page {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .content .width .line {
+    justify-content: center;
+  }
+  .content .width .line .page {
+    width: 100%;
+  }
 }
 .footer {
   margin-top: 100px;

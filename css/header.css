@@ -76,6 +76,7 @@
   -webkit-transition: all .5s;
 }
 .header .hidden {
+  display: none;
   overflow: hidden;
   max-height: 0px;
   background-color: #29B078;
@@ -129,6 +130,9 @@
     display: none;
   }
   .header input {
+    display: block;
+  }
+  .header .hidden {
     display: block;
   }
 }
